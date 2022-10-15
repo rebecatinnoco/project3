@@ -1,0 +1,8 @@
+{ "prodname": "Wireless-Camera", "qty": 5, "category": "Cameras","brand": "Ring" }
+{ "prodname": "Wired-Camera", "qty": 6, "category": "Cameras", "brand": "Uniview" }
+{ "prodname": "Cat6", "qty": 9, "category": "Cables", "brand": "FastCat" }
+{ "prodname": "RJ45", "qty": 7, "category": "Acessories", "brand": "Klein" }
+{ "prodname": "NVR16", "qty": 2, "category": "Recorders", "brand": "Uniview" }
+
+
+

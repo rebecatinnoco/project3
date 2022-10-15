@@ -1,0 +1,25 @@
+/* -------- NAVBAR ---------- */
+
+.top {
+  height: 180px;
+  font-size: large;
+  background-color: rgba(199,199,199,60%);
+}
+.top img {
+  height: 170px;
+}
+
+/* -------- HOME ---------- */
+.btt {
+  text-align: center;
+  justify-content: center;
+  padding: 5em;
+
+}
+.btt button{
+  /* text-align: center; */
+
+  margin: 15px;
+  /* display: block; */
+
+}
