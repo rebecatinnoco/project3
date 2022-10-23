@@ -2,13 +2,12 @@ module.exports = function(app) {
     var inventories = require('../controllers/inventory.controller.js');
     const connectEnsureLogin = require('connect-ensure-login');
     const express = require('express');
-const path = require('path');
-app.use(express.static(__dirname));
-const bodyParser = require('body-parser');
-const passport = require('passport');
-const expressSession = require('express-session');
-//const Registration = mongoose.model('Registration');
-app.use(bodyParser.json())
+    const path = require('path');
+    app.use(express.static(__dirname));
+    const bodyParser = require('body-parser');
+    const passport = require('passport');
+    const expressSession = require('express-session');
+    app.use(bodyParser.json())
 
 // configuring the database'
 require('dotenv').config();
@@ -85,4 +84,3 @@ app.use(express.json());
         });
     
 }
-

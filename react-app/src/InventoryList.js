@@ -188,16 +188,7 @@ class InventoryList extends Component {
             <div className="bg-light">
                 <AppNavbar />
                 <Container >
-                    <div className=""> 
-                        <Button
-                        color="info"
-                        className="my-4"
-                        tag={Link}
-                        to="/inventories/new"
-                        >
-                        <FontAwesomeIcon icon={faPlusCircle} className="fas fa-lg" /> New Category
-                        </Button>
-                    </div>
+                    
                     <Card border="info">
                         <Card.Header>
                             Accessories

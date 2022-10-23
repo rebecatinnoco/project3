@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-//mongoose.set('useFindAndModify', false);
 const Inventory = mongoose.model('Inventory');
 const Registration = mongoose.model('Registration');
 

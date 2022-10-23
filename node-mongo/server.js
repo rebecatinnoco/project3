@@ -5,7 +5,6 @@ app.use(express.static(__dirname));
 const bodyParser = require('body-parser');
 const passport = require('passport');
 const expressSession = require('express-session');
-//const Registration = mongoose.model('Registration');
 app.use(bodyParser.json())
 require('./app/models/inventory.model.js')
 require('./app/models/Registration.js')

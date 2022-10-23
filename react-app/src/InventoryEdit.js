@@ -87,13 +87,6 @@ class InventoryEdit extends Component {
                         </FormGroup>
                         <FormGroup>
                         <Label for="category" className="h5 mt-3">Category</Label>
-                            {/* <Input type="text"
-                            name="category"
-                            id="category"
-                            value={item.category || ''}
-                            onChange={this.handleChange}
-                            autoComplete="category"
-                            /> */}
                             <select
                             className="form-control form-control-lg"
                             type="select"
@@ -126,7 +119,7 @@ class InventoryEdit extends Component {
                             color="info"
                             type="submit"
                             className="mt-3"
-                            >Update</Button>{' '}
+                            >Save</Button>{' '}
                             <Button
                             color="secondary"
                             className="mt-3"

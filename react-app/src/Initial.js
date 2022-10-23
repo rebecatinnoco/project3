@@ -7,9 +7,6 @@ import './App.scss';
 import FacebookLogin from 'react-facebook-login';
 import logo from './logo.png';
 
-
-
-
 class Initial extends Component {
     render() {
         return (

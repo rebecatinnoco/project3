@@ -4,7 +4,7 @@ import { Button, Card } from "reactstrap";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import './App.scss';
-//import FacebookLogin from 'react-facebook-login';
+
 
 class Home extends Component {
     
