@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 //mongoose.set('useFindAndModify', false);
 const Inventory = mongoose.model('Inventory');
+const Registration = mongoose.model('Registration');
+
 
 exports.createInventory = (req,res) => {
     const inventory = new Inventory ({
@@ -8,6 +10,24 @@ exports.createInventory = (req,res) => {
         qty: req.body.qty,
         category: req.body.category,
         brand: req.body.brand,
+    });
+    // save inventory in the mongoDB
+    inventory.save().then(data => {
+        res.status(200).json(data);
+    }).catch(err => {
+        res.status(500).json({
+            message: "Fail!",
+            error: err.message
+        });
+    });
+};
+
+exports.createRegistration = (req,res) => {
+    const registration = new Registration ({
+        name: req.body.name,
+        email: req.body.email,
+        username: req.body.username,
+        password: req.body.password,
     });
     // save inventory in the mongoDB
     inventory.save().then(data => {

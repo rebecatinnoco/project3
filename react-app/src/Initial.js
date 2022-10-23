@@ -1,11 +1,12 @@
 import React, {Component, useState} from "react";
-import AppNavbar from "./Navbar"
-import Register from "./Register"
+import { Navbar, NavbarBrand } from "reactstrap";
 import { Button, Container} from "reactstrap";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import './App.css';
+import './App.scss';
 import FacebookLogin from 'react-facebook-login';
+import logo from './logo.png';
+
 
 
 
@@ -13,8 +14,12 @@ class Initial extends Component {
     render() {
         return (
             <div className="bg-dark">
-                <AppNavbar />
-                {/* <Container fluid className="btt"> */}
+                <Navbar className="top navbar-dark bg-info px-5" expand="lg">
+                
+                <NavbarBrand tag={Link} to="/">
+                </NavbarBrand>
+                <img src={logo} className="logo" alt="Logo" />.
+            </Navbar>
                 <Container className="btt">
                     <div>
                         <h3 className="text-white">Welcome to Leader Inventory</h3>
@@ -23,7 +28,7 @@ class Initial extends Component {
                     </div>
                     <Button className="btn btn-info">
                         <Link
-                        to="/Login"
+                        to="/"
                         className="nav-link text-white"
                         >LOGIN
                         </Link>
@@ -55,7 +60,7 @@ function Login() {
     }
   
     return (
-      <div class="container">
+      <div className="container">
         <Container>
         {!login &&
               <React.Fragment>
@@ -70,7 +75,8 @@ function Login() {
               </React.Fragment>  
               }
               {login &&
-              <Home fbpic={picture} fbdata={data}/>
+              
+              <Logged fbpic={picture} fbdata={data}/>
               }
         </Container>
       </div>
@@ -87,7 +93,7 @@ function Login() {
       )
     }
     
-    function Home ({fbpic,fbdata}) {
+    function Logged ({fbpic,fbdata}) {
       return (
         <React.Fragment>
         <img src={fbpic} alt={fbdata.name} />

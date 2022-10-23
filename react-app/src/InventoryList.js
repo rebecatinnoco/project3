@@ -69,7 +69,7 @@ class InventoryList extends Component {
             </tr>
         });
         const inventoryAcc = inventories.map(inventory => {
-            if (inventory.category === 'Acessories'){
+            if (inventory.category === 'Accessories'){
                 return <tr key={inventory._id}>
                 <td style={{whiteSpace: 'nowrap'}}>{inventory.prodname}</td>
                 <td>{inventory.qty}</td>

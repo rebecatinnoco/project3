@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import AppNavbar from "./Navbar"
 import { Button, Container, Form, FormGroup, Input, Label } from "reactstrap";
 import { Link} from "react-router-dom";
+
  
 class InventoryEdit extends Component {
     emptyInventory = {
@@ -55,7 +56,7 @@ class InventoryEdit extends Component {
         <h2 className="mt-3">
             {/* if item has an id number, otherwise */}
             {item._id ? 'Edit Inventory' : 'Add Inventory'}
-        </h2>
+        </h2>;
 
         return (
             <div>
@@ -86,13 +87,29 @@ class InventoryEdit extends Component {
                         </FormGroup>
                         <FormGroup>
                         <Label for="category" className="h5 mt-3">Category</Label>
-                            <Input type="text"
+                            {/* <Input type="text"
                             name="category"
                             id="category"
                             value={item.category || ''}
                             onChange={this.handleChange}
                             autoComplete="category"
-                            />
+                            /> */}
+                            <select
+                            className="form-control form-control-lg"
+                            type="select"
+                            name="category"
+                            id="category"
+                            value={item.category || ''}
+                            onChange={this.handleChange}
+                            autoComplete="category"
+                            >
+                                
+                                <option>Select One</option>
+                                <option>Accessories</option>
+                                <option>Cameras</option>
+                                <option>Cables</option>
+                                <option>Recorders</option>
+                            </select>
                         </FormGroup>
                         <FormGroup>
                         <Label for="brand" className="h5 mt-3">Brand</Label>
@@ -109,13 +126,12 @@ class InventoryEdit extends Component {
                             color="info"
                             type="submit"
                             className="mt-3"
-
-                            >Save</Button>{' '}
+                            >Update</Button>{' '}
                             <Button
                             color="secondary"
                             className="mt-3"
                             tag={Link} to="/inventories"
-                            >Cancel</Button>
+                            >Close</Button>
                         </FormGroup>
                     </Form>
                 </Container>

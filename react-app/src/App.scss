@@ -1,0 +1,23 @@
+.top {
+    height: 180px;
+    font-size: large;
+    background-color: rgba(199, 199, 199, 60%);
+  
+    img {
+      height: 170px;
+    }
+  }
+  
+  .btt {
+    text-align: center;
+    justify-content: center;
+    padding: 5em;
+  
+    button {
+      /* text-align: center; */
+  
+      margin: 15px;
+  
+      /* display: block; */
+    }
+  }

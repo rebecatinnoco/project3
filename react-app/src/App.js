@@ -5,21 +5,18 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import InventoryList from "./InventoryList"
 import InventoryEdit from "./InventoryEdit"
 import Register from "./Register"
-import Login from "./Login"
 import Initial from "./Initial"
-
-import './App.css'
+import './App.scss'
 
 class App extends Component {
   render () {
     return (
       <Router>
         <Routes>
-          <Route path='/' element={<Initial />} />
+          <Route path='/initial' element={<Initial />} />
+          <Route path='/' element={<Home />} />
           <Route path='/inventories' element={<InventoryList />} />
           <Route path='/Register' element={<Register />} />
-          <Route path='/Login' element={<Login />} />
-          <Route path='/Home' element={<Home />} />
           <Route path='/inventories/:id' element={<InventoryEdit />} />
         </Routes>
       </Router>

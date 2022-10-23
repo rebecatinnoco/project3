@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import React, {useState} from 'react';
 import {Card} from 'react-bootstrap';
 import FacebookLogin from 'react-facebook-login';
@@ -26,7 +26,7 @@ function Login() {
   }
 
   return (
-    <div class="container">
+    <div className="container">
       <AppNavbar />
       <Card style={{width:'400px'}} className="mx-auto mt-5">
         <Card.Body>
