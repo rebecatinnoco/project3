@@ -11,9 +11,9 @@ class Initial extends Component {
     render() {
         return (
             <div className="bg-dark">
-                <Navbar className="top navbar-dark bg-info px-5" expand="lg">
+                <Navbar className="top navbar-dark bg-white px-5" expand="lg">
                 
-                <NavbarBrand tag={Link} to="/">
+                <NavbarBrand tag={Link} to="/home">
                 </NavbarBrand>
                 <img src={logo} className="logo" alt="Logo" />.
             </Navbar>
@@ -25,7 +25,7 @@ class Initial extends Component {
                     </div>
                     <Button className="btn btn-info">
                         <Link
-                        to="/"
+                        to="/home"
                         className="nav-link text-white"
                         >LOGIN
                         </Link>

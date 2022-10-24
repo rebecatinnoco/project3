@@ -10,7 +10,7 @@ import logo from './logo.png';
 export default class AppNavbar extends Component {
     render() {
         return (
-            <Navbar className="top navbar-dark bg-info px-5" expand="lg">
+            <Navbar className="top navbar-dark bg-white px-5" expand="lg">
                 
                 <NavbarBrand tag={Link} to="/">
                 <FontAwesomeIcon icon={faAnglesLeft} className="fas fa-lg" />
