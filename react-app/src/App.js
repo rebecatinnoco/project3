@@ -13,8 +13,8 @@ class App extends Component {
     return (
       <Router>
         <Routes>
-          <Route path='/initial' element={<Initial />} />
-          <Route path='/' element={<Home />} />
+          <Route path='/' element={<Initial />} />
+          <Route path='/home' element={<Home />} />
           <Route path='/inventories' element={<InventoryList />} />
           <Route path='/Register' element={<Register />} />
           <Route path='/inventories/:id' element={<InventoryEdit />} />
